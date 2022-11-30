@@ -1,2 +1,101 @@
 @import 'font.css';
 
+:root {
+    --main-bg-color: #fff;
+    --secend-bg-color: #F5F5F5;
+    --grey: #4b4b4b;
+    --f_Poppins: 'Poppins';
+    --f_Inter: 'Inter';
+    --red: #963B40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--f_Poppins);
+    overflow-x: hidden;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: unset;
+}
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.bg-second {
+    background: var(--secend-bg-color);
+}
+
+.top__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.top__header ul {
+    display: flex;
+}
+
+.top__header a {
+    font-size: 13px;
+    color: #23181c;
+}
+
+ul.list > li {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right:  1px solid #23181c;
+}
+
+ul.list > li:last-child {
+    border: none;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown__content {
+    top: 100%;
+    opacity: 1;
+}
+
+.dropdown__content {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: visible;
+    position: absolute;
+    top: calc(100% + 10px);
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0;
+    background: #fff;
+    transition: .4s;
+}
+
+.dropdown__content > li > a {
+    padding: 10px;
+}
+
+.dropdown__content > li > a:hover {
+    color: var(--red);
+}
+
