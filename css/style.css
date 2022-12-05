@@ -7,6 +7,8 @@
     --f_Poppins: 'Poppins';
     --f_Inter: 'Inter';
     --red: #963B40;
+    --black: #000;
+    --white: #fff;
 }
 
 * {
@@ -31,6 +33,11 @@ li {
 img {
     max-width: 100%;
 }
+
+button {
+    border: none;
+    cursor: pointer;
+}
 .container {
     max-width: 1366px;
     width: 100%;
@@ -38,6 +45,25 @@ img {
     padding: 0 15px;
     position: relative;
 }
+
+.btn-flat {
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 700;
+    background: var(--black);
+    width: 130px;
+    cursor: pointer;
+    transition: .5s;
+    border: 2px solid var(--black);
+}
+
+.btn-flat:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
 .bg-second {
     background: var(--secend-bg-color);
@@ -166,6 +192,19 @@ ul.list > li:last-child {
     font-size: 15px;
     font-weight: 600;
     padding: 8px 0;
+    transition: .5s;
+}
+
+.main__menu > li > a:hover {
+    color: var(--red);
+}
+
+.mega__dropdown > a > i {
+    transition: .5s;
+}
+
+.mega__dropdown:hover > a > i {
+    transform: rotate(180deg);
 }
 
 .mega__content {
@@ -184,6 +223,7 @@ ul.list > li:last-child {
 .mega__dropdown:hover .mega__content {
     top: 100%;
     opacity: 1;
+    z-index: 111;
     visibility: visible;
 }
 
@@ -205,4 +245,89 @@ ul.list > li:last-child {
     padding-left: 10px;
     color: var(--red);
     border-bottom: 2px dashed var(--red);
+}
+
+/* ========================== Main start =========================== */
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-= Slider section start =-=-=-=-=-=-=-=-=-=-=-=- */
+
+#slider {
+    height: 100vh;
+    position: relative;
+    padding: 0 20px;
+}
+
+#slider .container {
+    height: 100%;
+    position: relative;
+}
+
+#slider .container .slide {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    overflow: hidden;
+    /* opacity: 0; */
+}
+
+#slider .container .slide.active {
+    visibility: visible;
+}
+
+#slider .container .slide .info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#slider .container .slide .img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider .container .slide .info .info__txt {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#slider .container .slide .info .info__title {
+    font-size: 59px;
+    margin: 14px 0 31px;
+}
+
+#slider .container .slide .info .info__text {
+    font-size: 15px;
+    line-height: 22px;
+    color: #575757;
+    margin-bottom: 30px;
+}
+
+.slider__controll {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__controll:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.next {
+    right: 2%;
+}
+.prev {
+    left: 2%;
 }
