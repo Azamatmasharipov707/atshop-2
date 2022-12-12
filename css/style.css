@@ -63,6 +63,14 @@ button {
     color: var(--black);
 }
 
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
 .bg-second {
@@ -394,4 +402,126 @@ ul.list > li:last-child {
 }
 .transition-delay-8 {
     transition-delay: .8s;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=- Promation section start -=-=-=-=-=-=-=-=-=-=-=- */
+
+.promation__box {
+    background: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.promation__box:hover img {
+    transform: scale(1.1);
+}
+
+.promation__text {
+    padding: 21px 0 21px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.promation__text h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.promation__btn {
+    width: 170px;
+}
+
+.promation__box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Product section start =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+#product {
+    margin: 100px 0 75px;
+}
+
+.product__card-img {
+    height: 308px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__card-img img {
+    max-height: 100%;
+}
+
+.product__card-img img:nth-of-type(2) {
+    display: none;
+}
+
+.product__card:hover .product__card-img img:nth-of-type(1) {
+    display: none;
+}
+
+.product__card:hover .product__card-img img:nth-of-type(2) {
+    display: block;
+}
+
+.product__card-info {
+    position: relative;
+    text-align: center;
+}
+
+.product__btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all .3s ease-in-out;
+}
+
+.product__card:hover .product__btns {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.product__card-btn:first-of-type {
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.product__card-btn:nth-of-type(2),
+.product__card-btn:nth-of-type(3) {
+    width: 40px;
+}
+
+.product__card-name {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 22px 0;
+}
+
+.product__card-price span {
+    font-size: 14px;
+}
+
+.product__card-price span:last-of-type {
+    color: var(--red);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 11px;
+}
+
+.product__link {
+    text-align: center;
+    margin-top: 100px;
 }
