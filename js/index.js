@@ -106,10 +106,12 @@ const products = [
         image2: '/image/product/img-8hover.png',
         oldPrice: '$400',
         currPrice: '$300'
-    }
+    },
+    
 ]
 
 const productList = document.querySelector('#latest-product');
+const productList_2 = document.querySelector('#best-product');
 
 products.forEach(e => {
     let product = `
@@ -136,4 +138,5 @@ products.forEach(e => {
     
     `
     productList.insertAdjacentHTML('beforeend', product)
+    productList_2.insertAdjacentHTML('afterbegin', product)
 })

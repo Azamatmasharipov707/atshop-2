@@ -441,7 +441,7 @@ ul.list > li:last-child {
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Product section start =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
-#product {
+#product, #product-2 {
     margin: 100px 0 75px;
 }
 
@@ -524,4 +524,141 @@ ul.list > li:last-child {
 .product__link {
     text-align: center;
     margin-top: 100px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Special-product section start -=-=-=-=-=-=-=-=-=-=*/
+
+#special-product .bg-second {
+    padding: 30px 0;
+}
+
+.special-product__image {
+    max-width: 400px;
+    width: 100%;
+    height: 326px;
+}
+
+.special-product__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.special-product__title {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.special-product__txt {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 21px 0 57px;
+    max-width: 654px;
+    width: 100%;
+}
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=- Blog section start -=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+#blog {
+    margin-bottom: 90px;
+}
+
+.blog__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog__desc-title {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.blog__desc-txt {
+    font-size: 17px;
+    line-height: 26px;
+    margin: 43px 0 75px;
+}
+
+.blog__link {
+    text-align: center;
+    margin-top: 113px;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Footer start -=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+#footer .bg-second {
+    padding: 66px 0 112px;
+}
+
+.footer__list {
+    padding-left: 40px;
+}
+
+.footer__list p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer__link {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.footer__link:hover {
+    padding-left: 5px;
+    color: var(--red);
+}
+
+.footer__socials {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__socials-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 44px;
+}
+
+.footer__socials-list {
+    display: flex;
+    column-gap: 24px;
+    margin-bottom: 40px;
+}
+
+.footer__socials-link {
+    font-size: 25px;
+}
+
+.footer__form {
+    height: 50px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 0 7px 0 17px;
+}
+
+.footer__form button {
+    padding: 11px 14px;
+    background: var(--red);
+    color: var(--white);
+    font-family: var(--f_Inter);
+    font-size: 12px;
+}
+
+.footer__form button:hover {
+    background: rgb(79, 5, 5);
+}
+
+.footer__form input {
+    outline: none;
+    border: none;
 }
