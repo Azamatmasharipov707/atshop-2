@@ -662,3 +662,37 @@ ul.list > li:last-child {
     outline: none;
     border: none;
 }
+
+/* ============================= Product page start ============================= */
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs__link {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.breadcrumbs__link i {
+    margin: 0 20px;
+}
+
+.product__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-img__item {
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.product-img__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
